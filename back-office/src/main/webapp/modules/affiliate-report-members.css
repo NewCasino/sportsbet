@@ -1,0 +1,6 @@
+#result table {width: auto;}
+#affilate-members {width: 100%;}
+#result table td {line-height: inherit!important;}
+#loading {position: absolute; top: 5px;}
+#result-panel .loading-pnl {height: 26px; position: relative;}
+#message {height: 26px; line-height: 26px; padding: 0; margin: 0;}

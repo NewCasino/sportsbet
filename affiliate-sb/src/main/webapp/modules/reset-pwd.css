@@ -1,0 +1,74 @@
+#body {
+    color: black;
+}
+
+#body .c-top .c-left {
+    padding: 20px;
+    width: 750px;
+}
+
+.banner {
+    display: none;
+}
+
+#content-left {
+    background: #fff url(../images/v3/oddspage-head.png) repeat-x 0 0;
+    padding: 0;
+}
+
+h1 {
+    line-height: 32px !important;
+    background: url(../images/v3/ico1.png) no-repeat 15px center;
+    padding-left: 45px;
+    font-size: 100% !important;
+    font-weight: normal !important;
+}
+
+
+#body input[type='text'], 
+#body input[type='password'], 
+#body input[type='file'], 
+#body select, 
+#body textarea {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 2px 2px;
+}
+ 
+#body table td {
+    padding: 3px;
+}
+
+.tips {
+    margin-bottom: 10px;
+    clear: both;
+    overflow: hidden;
+}
+
+.tips p {
+    padding: 10px;
+}
+
+.info {
+    margin-left: 30px;
+    padding-left: 30px;
+    border-left: 1px solid #ccc;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+.info h3 {
+    line-height: 1.6em;
+}
+
+form table {
+    float: left;
+}
+
+#message {
+    padding: 3px 5px;
+    background: #FFD734;
+    border-radius: 4px;
+    cursor: default;
+}

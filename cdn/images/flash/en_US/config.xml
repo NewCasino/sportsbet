@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<settings>	
+
+		<auto_play>
+			<defaults symbol="circular" /><!--倒计时按钮的位置-->
+			<tweenIn x="895" y="45" width="30" height="30" tint="0xFFFFFF" alpha="0.3"/>
+			<tweenOver alpha="1"/>
+		</auto_play>
+	
+		<prev_button><!--左右翻页按钮的位置-->				
+			<tweenIn x="865" y="270" width="30" height="30" alpha="0" />
+			<tweenOver alpha="0" />
+		</prev_button>
+		
+		<next_button>			
+			<tweenIn x="895" y="270" width="30" height="30" alpha="0" />
+			<tweenOver alpha="0" />
+		</next_button>
+		
+		<prev_symbol>
+			<defaults type="3" />
+			<tweenIn x="865" y="270" alpha="0.1"  />
+			<tweenOver time="0.15" x="860" scaleX="1.1" scaleY="1.1" />
+		</prev_symbol>
+			
+		<next_symbol>
+			<defaults type="3" />
+			<tweenIn x="895" y="270" alpha="0.1"/>
+			<tweenOver time="0.15" x="900" scaleX="1.1" scaleY="1.1" />
+		</next_symbol>		
+
+		<description>
+			<defaults 
+				round_corners="10, 10, 10, 10"					
+				heading_text_size="22"
+				heading_text_color="0xfc9900"	
+				paragraph_text_size="13"
+				paragraph_text_color="0xFFFFFF"					
+			/>
+			<tweenIn x="200" y="100" width="560" height="90" alpha="0.15" />
+			<tweenOver alpha="0.3"/>
+		</description>	
+	
+		<transitions
+			slicing="vertical" 
+			direction="down"
+			duration="0.6" 
+			delay="0.2"
+			cube_color="0x611811"
+		/>
+	
+	</settings>
+
+
+	<slides>	
+		<slide>
+			<url>/cdn/images/slider/english/2.jpg</url>
+			<link target="_blank">http://www.betmart.com/member/sports</link>	
+		</slide>	
+					
+		<transition  num="6" slicing="horizontal"  direction="right" duration="0.8"  delay="0.05" z_multiplier="5"/>	
+		
+		<slide>
+			<url>/cdn/images/slider/english/3.jpg</url>
+			<link target="_blank">http://www.betmart.com/member/casino-lobby</link>
+		</slide>				
+		
+		<transition num="6" slicing="vertical" direction="down" shader="phong" delay="0.05"/>			
+		<!--
+		<slide>
+			<url>/cdn/images/slider/english/4.jpg</url>
+			<link target="_blank">http://www.betmart.com/member/sports?page=signup</link>	
+		</slide>	-->			
+		
+		<transition num="4" direction="down" slicing="horizontal" z_multiplier="6" delay="0.1"/>	
+		
+		<slide>
+			<url>/cdn/images/slider/english/5.jpg</url>
+			<link target="_blank">http://www.betmart.com/member/sports</link>	
+		</slide>				
+		
+		<transition num="4" direction="up" z_multiplier="2.5" delay="0.03"/>			
+		
+		<slide>
+			<url>/cdn/images/slider/english/6.jpg</url>
+		    <link target="_blank">http://affiliate.betmart.com/web/register</link>	
+		</slide>				
+		
+		<transition direction="right"/>			
+		
+		<slide>
+			<url>/cdn/images/slider/english/7.jpg</url>
+		    <link target="_blank">http://affiliate.betmart.com/web/register</link>	
+		</slide>				
+					
+	</slides>
+</data>
+

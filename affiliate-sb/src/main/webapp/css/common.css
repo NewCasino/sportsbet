@@ -1,0 +1,191 @@
+.hide,.template { display: none;}
+
+invisible {
+    visibility: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.scrollable {
+    overflow-y: auto;
+}
+
+.center{
+    text-align: center !important;
+}
+
+.t-left{
+    text-align: left;
+}
+
+.t-right{
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.w-title.purple {
+    filter:progid:DXImageTransform.Microsoft.Gradient(StartColorStr=#c030f0,EndColorStr=#400070); BACKGROUND: #0077dd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c030f0), to(#400070)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #c030f0,  #400070); /* for firefox 3.6+ */
+}
+
+.ui-btn, input[type='submit'], input[type='button'], input[type='reset'] {
+    background: url(../images/v5/bg_Button2.png) no-repeat;
+    cursor: pointer;
+    width: 116px;
+    height: 24px;
+    display: inline-block;
+    border: none;
+    font-size: 12px !important;
+    color: #fff !important;
+    text-align: center;
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.ui-btn:hover, input[type='submit']:hover {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.ui-btn:active, input[type='submit']:active {
+    background-position: 0 1px;
+}
+
+input[type='text'], 
+input[type='password'], 
+input[type='file'], 
+textarea {
+}
+
+#message-container {
+    bottom:15px;
+    position:fixed;
+    right:15px;
+}
+
+#message-container .message-queue {
+    min-height:80px;
+    width:280px;
+    margin-top: 10px;
+    background: #6D2E5D;
+    -moz-border-radius: 5px; /* FF1+ */
+    -webkit-border-radius: 5px; /* Saf3-4 */
+    border-radius: 5px; /* Opera 10.5, IE 9, Saf5, Chrome */
+    -webkit-box-shadow: #888 0px 4px 10px;
+    -moz-box-shadow: #888 0px 4px 10px;
+    box-shadow: #888 0px 4px 10px;
+    margin-bottom: -30px;
+    opacity: 0;
+    color: #fff;
+    font-size:0.8em;
+    position: relative;
+}
+
+#message-container .message-queue .close {
+    background: url(../images/close.png) no-repeat 0 0;
+    width: 14px;
+    height: 14px;
+    float: right;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+#message-container .message-queue .title {
+    font-weight: bold;    
+    text-align: center;
+    font-size: 12px;
+    padding-top: 3px;
+}
+
+#message-container .message-queue .content {
+    padding:8px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.clear {float: none!important; clear: both;}
+
+.p20 { padding: 20px; }
+
+.m10 { margin: 10px; }
+
+.tab-panel {
+}
+
+.tab-panel .tabs {
+    padding-left: 20px;
+}
+
+.tab-panel .tab-item {
+    display: inline-block;
+}
+
+.tab-panel .tab-item a {
+    display: inline-block;
+    background: url(../images/v5/bg_Tab_default.jpg) no-repeat center center;
+    width: 113px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+.tab-panel .active a {
+    background: url(../images/v5/bg_Tab_select.jpg) no-repeat center center;
+    color: #AE8646;
+}
+
+.tab-panel .tab-content {
+    background: #fff;
+    padding: 20px;
+    -ms-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.tab-panel .tab-content form .wrap {
+    border: solid 1px #E6DCBF;
+    padding: 10px;
+}
+
+
+/* Bootstrap Overrides
+------------------------------- */
+form .control-group .controls label {
+    padding-top: 5px;
+}
+
+.modal {
+    display: none;
+}
+
+.btn i {
+    vertical-align: top;
+}
+
+.red {
+    color: red;
+}

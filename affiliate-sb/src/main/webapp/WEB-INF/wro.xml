@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups xmlns="http://www.isdc.ro/wro"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
+
+    <group name='framework'>
+        <js>/private/framework/jquery-1.8.0.js</js>
+        <js>/private/framework/jquery.livequery.js</js>
+        <js>/private/framework/i18n.js</js>
+        <js>/private/framework/utils.js</js>
+        <js>/private/framework/extensions.js</js>
+        <js>/private/framework/jquery.cookie.js</js>
+        <js>/private/framework/json2.js</js>
+        <js>/private/framework/ticker.js</js>
+        <js>/private/framework/syncer.js</js>
+        <js>/private/framework/trimpath-template-1.1.2.js</js>
+    </group> 
+    
+    <group name="module.base">
+        <css>/css/reset.css</css>
+        <css>/css/common.css</css>
+        <css>/css/screen.css</css>
+        <css>/css/main.css</css>
+        <css>/css/content.css</css>
+        <js>/modules/header.js</js>
+        <js>/private/framework/behaviors.js</js>
+        <js>/modules/setup.js</js>
+    </group>
+    
+    <group name="static.base">
+        <css>/private/external/nivo-slider/nivo-slider.css</css>
+        <js>/private/external/nivo-slider/jquery.nivo.slider.pack.js</js>
+    </group>
+
+    <group name="page.home">
+        <group-ref>module.base</group-ref>
+        <group-ref>static.base</group-ref>
+        <css>/modules/home.css</css>
+        <js>/modules/home.js</js>
+    </group>
+
+    <group name="page.articles">
+        <group-ref>module.base</group-ref>
+        <css>/modules/static.css</css>
+    </group>
+
+    <group name="page.message">
+        <group-ref>module.base</group-ref>
+        <css>/modules/message.css</css>
+    </group>
+
+    <group name="page.static">
+        <group-ref>module.base</group-ref>
+        <group-ref>static.base</group-ref>
+        <css>/modules/static.css</css>
+    </group>
+
+    <group name="page.register">
+        <group-ref>module.base</group-ref>
+        <css>/modules/register.css</css>
+        <js>/modules/register.js</js>
+    </group>
+    
+    <group name="page.affiliate-report">
+         <group-ref>module.base</group-ref>
+        <css>/css/subpage.css</css>
+        <css>/private/external/datepicker/css/datepicker.css</css>
+        <js>/private/external/datepicker/datepicker.js</js>
+        <js>/private/external/xdate.js</js>
+        <css>/modules/affiliate-report.css</css>
+        <js>/modules/affiliate-report.js</js>
+    </group>
+    
+    <group name="page.affiliate-summary">
+        <group-ref>module.base</group-ref>        
+        <css>/css/subpage.css</css>        
+        <css>/private/external/datepicker/css/datepicker.css</css>
+        <js>/private/external/datepicker/datepicker.js</js>
+        <js>/private/external/xdate.js</js>
+        <css>/modules/affiliate/summary.css</css>
+        <js>/modules/affiliate/summary.js</js>
+    </group>
+    
+    <group name="page.affiliate-banners">
+        <group-ref>module.base</group-ref>        
+        <css>/css/subpage.css</css>        
+        <css>/private/external/bootstrap/css/bootstrap.css</css>
+        <js>/private/external/bootstrap/js/bootstrap.js</js>
+        <css>/modules/affiliate/banners.css</css>
+        <js>/modules/affiliate/banners.js</js>
+    </group>
+    
+    <group name="page.message-put">
+        <group-ref>module.base</group-ref>        
+        <css>/css/subpage.css</css>        
+        <css>/modules/affiliate/messages.css</css>
+        <js>/modules/affiliate/message-put.js</js>
+    </group>
+    
+    <group name="page.message-list">
+        <group-ref>module.base</group-ref>        
+        <css>/css/subpage.css</css>        
+        <js>/private/external/dateFormat-1.2.3.js</js>
+        <css>/modules/affiliate/messages.css</css>
+        <js>/modules/affiliate/message-list.js</js>
+    </group>
+    
+    <group name="page.affiliate-ann">
+        <group-ref>module.base</group-ref>        
+        <css>/css/subpage.css</css>        
+        <js>/private/external/dateFormat-1.2.3.js</js>
+        <css>/modules/affiliate/announcements.css</css>
+        <js>/modules/affiliate/announcements.js</js>
+    </group>
+    
+    <group name="page.profile-settings">
+         <group-ref>module.base</group-ref>
+        <css>/css/subpage.css</css>
+        <css>/modules/profile.css</css>
+        <js>/modules/profile.js</js>
+    </group>
+    
+    <group name="page.profile-change-password">
+         <group-ref>module.base</group-ref>
+        <css>/css/subpage.css</css>
+        <css>/modules/reset-pwd.css</css>
+        <js>/modules/reset-pwd.js</js>
+    </group>
+    
+    <group name="page.reset-pwd">
+        <group-ref>module.base</group-ref>
+        <css>/css/main.css</css>
+        <css>/modules/reset-pwd.css</css>
+        <js>/modules/reset-pwd.js</js>
+    </group>
+    
+    <group name="page.forget-pwd">
+        <group-ref>module.base</group-ref>
+        <css>/css/main.css</css>
+        <css>/modules/forget-pwd.css</css>
+        <js>/modules/forget-pwd.js</js>
+    </group>
+    
+    <group name="i18n.zh_CN">
+        <js>/private/locale/zh_CN.js</js>
+    </group>
+    
+    <group name="i18n.zh_TW">
+        <js>/private/locale/zh_TW.js</js>
+    </group>
+</groups>

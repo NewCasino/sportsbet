@@ -1,0 +1,26 @@
+#result table thead td {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    text-align: center;
+}
+
+.msie table {
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+.msie #result table tbody td {
+    border-right: 0;
+}
+
+#result table tbody td {
+    white-space: nowrap;
+    text-align: right;
+}
+
+#result{
+    overflow: auto;
+    position: absolute;
+}

@@ -1,0 +1,9 @@
+
+body { /*background: transparent url(/cdn/images/big-banners/brazil-carnival.jpg) no-repeat center top;*/ }
+.c-top .c-left {background: transparent url(/cdn/images/affiliate/en/aff-home.jpg) no-repeat center top;}
+.zh_CN .c-top .c-left {background: transparent url(/cdn/images/affiliate/aff-home.jpg) no-repeat center top;}
+
+.c-top .c-right {height: 300px; }
+
+.c-left {min-height: 440px !important;}
+#wrapper-bg {min-height: 800px !important; }

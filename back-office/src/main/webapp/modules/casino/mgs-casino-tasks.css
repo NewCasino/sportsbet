@@ -1,0 +1,8 @@
+/*#request-form span {display:inline-block; width: 120px;}*/
+#request-form span {display:block;}
+#request-form input ,#request-form select {width: 200px;}
+#request-form #submit-request {width: 80px; margin-top: 10px;}
+#request-form ul li {padding: 3px 0 3px 0;}
+#result {margin-top: 20px;}
+#result ul {padding: 10px;}
+#result ul li {padding: 2px;}

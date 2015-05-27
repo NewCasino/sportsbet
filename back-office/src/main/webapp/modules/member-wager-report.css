@@ -1,0 +1,76 @@
+td { text-align: center }
+
+#result table thead td {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    white-space: pre-wrap;
+}
+
+#result table tbody td {    
+    white-space: pre-wrap;
+}
+
+#result table tfoot td {
+    font-weight: bold;
+    text-align: center;
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    background: #FFFAC9;
+}
+
+#btn-excel , #excel-save-as{
+    width: 150px;
+    height: 26px;
+    line-height: 26px;
+    text-align:center;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    top: -2px;
+    background: darkGray url(../public/images/button-bg.png) repeat-x 0 0;
+    border: none;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.246094);
+    border-radius:  5px 0 0px 5px;
+    color: #DDD;
+    cursor: pointer;    
+    -moz-border-radius:  5px 0 0px 5px;
+    -webkit-border-radius:  5px 0 0px 5px;
+    -moz-text-shadow: rgba(0, 0, 0, 0.246094) 0px -1px 3px;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.246094) 0px -1px 3px;
+    text-shadow: rgba(0, 0, 0, 0.246094) 0px -1px 1px;
+    -moz-box-shadow: #AAA 0px 0px 8px;
+    -webkit-box-shadow: #AAA 0px 0px 8px;
+    box-shadow: 0 0px 8px #AAA;
+
+}
+
+#excel-save-as{    
+    margin-left: -3px;
+    width: 22px;
+    height: 26px;    
+    border-radius:  0px 5px 5px 0;
+    -moz-border-radius:  0px 5px 5px 0;
+    -webkit-border-radius:  0px 5px 5px 0;
+}
+
+#excel-save-as object {
+    position: absolute;
+    left: 0;
+}
+
+#start-time, #end-time {
+    width: 80px;
+}
+
+#btn-excel:hover {
+    color: white;
+}
+
+#member-wager-report #result {
+    position: absolute;
+}
+
+.loading-dlg .ui-dialog-titlebar {display: none;}

@@ -1,0 +1,18 @@
+td { text-align: center }
+
+.banner {
+    display: none;
+}
+
+#content-left {
+    background: #fff url(../images/v3/oddspage-head.png) repeat-x 0 0;
+    padding: 0;
+}
+
+h1 {
+    line-height: 32px !important;
+    background: url(../images/v3/ico1.png) no-repeat 15px center;
+    padding-left: 45px;
+    font-size: 100% !important;
+    font-weight: normal !important;
+}

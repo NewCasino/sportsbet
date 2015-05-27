@@ -1,0 +1,7 @@
+#result table thead td {
+    text-align: center;
+}
+
+#result table tbody td {
+    text-align: right;
+}

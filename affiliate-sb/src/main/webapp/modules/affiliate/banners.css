@@ -1,0 +1,10 @@
+.panel-title {
+    background-image: url(../../images/v5/title_Line2.jpg);
+    height: 35px;
+    line-height: 32px;
+}
+
+.panel-title small {
+    color: #000;
+    font-weight: lighter;
+}

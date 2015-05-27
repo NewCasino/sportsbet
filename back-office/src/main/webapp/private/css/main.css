@@ -1,0 +1,238 @@
+#body-wrapper {width: 100%; height: 100%;}
+#header {height:85px; width:100%; z-index:3; position: absolute; left: 0; top: 0; overflow: hidden; white-space: nowrap; background:url(../../public/images/header-bg.png) no-repeat left top #811C7B; ;
+         -moz-box-shadow: 0px 2px 5px #888;
+         -webkit-box-shadow: 0px 2px 5px #888;
+         box-shadow: 0px 2px 5px #888;
+
+}
+#content {width:100%; position: absolute; left: 0; top: 85px; bottom: 0; background: gray;}
+#content div.space-left {padding-left: 190px; height: 100%; background: whitesmoke;}
+#content div.space-top { height: 100%; background: goldenrod; border: 0px solid black;}
+
+#left-menu{ width: 190px; left: 1px; top: 1px; bottom: 1px; right:1px; position: absolute; background: url(../../public/images/lm-bg.png) repeat-y left top transparent; border-right: 1px solid white;}
+#left-menu .lm-l-spacing {height: 100%; overflow: auto;}
+/*#left-menu .lm-r-spacing {background: url(../../public/images/lm-right.png) repeat-y right top transparent; height: 100%;}*/
+/*#menu-wrapper{position: absolute; left: 5px; right: 5px; top: 5px;}*/
+#menu-wrapper{overflow-x: hidden; overflow-y: auto;}
+#menu-wrapper div.m-title {
+    background: url(../../public/images/lm-title-bg.png) repeat-x left top transparent;
+    color: white; font-weight: bold;font-size: 12px;
+    height: 30px;
+    white-space: nowrap;    
+    overflow: visible;
+    text-overflow: ellipsis;
+    vertical-align: middle; text-align: left;
+    margin: auto;
+    line-height: 25px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    cursor: pointer;
+    padding-left: 3px;
+    -moz-box-shadow: 0px 2px 5px #888;
+    -webkit-box-shadow: 0px 2px 5px #888;
+    box-shadow: 0px 2px 5px #888;
+    margin-top: 12px;
+    position: relative;
+
+}
+#menu-wrapper div.m-title span{
+    padding-left: 36px;
+/*    width: 89%;background:url(../../public/images/lm-expanded.png) no-repeat left center transparent; display: block;*/
+}
+
+#menu-wrapper .collapsed div.m-title span{
+/*    background:url(../../public/images/lm-collapsed.png) no-repeat left center transparent;*/
+}
+
+#menu-wrapper .expanded div.m-title span{
+/*    background:url(../../public/images/lm-expanded.png) no-repeat left center transparent;*/
+}
+
+#menu-wrapper div.m-title:hover {
+    background-image:url(../../public/images/lm-title-bg-hv.png) ;
+}
+
+#menu-wrapper ul{ padding: 3px 4px 3px 4px;}
+#menu-wrapper ul li {  border-bottom: 1px dashed indigo ; background:url(../../public/images/lm-item-icon.png) no-repeat left center transparent;}
+#menu-wrapper ul li:hover {background-color: #F7D3FA;}
+#menu-wrapper ul li a {padding: 5px 5px 5px 26px; width: 85%; text-decoration: none; color: black; display: block; height: 100%;}
+
+#page-content {height: 100%; }
+#iContent {width: 100%; height: 100%; background: #FAFAFA;}
+
+#header .info {color: white; font-weight: bold; float: right; position: absolute; bottom: 10px; right: 5px;}
+#header .info li {float:left; margin-right: 20px;}
+#header .info li a#logout {color: red; }
+#header .info li a#logout:hover {color: yellow; text-decoration: underline;}
+
+
+#logo {
+    
+    width: 204px;
+    height: 84px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#menu-wrapper ul li:hover {background-color: #F7D3FA!important;}
+#menu-wrapper ul li.currency-mgnt{
+    background:  url(../../public/images/menu-icons/currency.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.announcement{
+    background:  url(../../public/images/menu-icons/announcements.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.private-mgs{
+    background:  url(../../public/images/menu-icons/private-mgs.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.system-taks{
+    background:  url(../../public/images/menu-icons/system-taks.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.schedule-log{
+    background:  url(../../public/images/menu-icons/schedule-log.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.audit-log{
+    background:  url(../../public/images/menu-icons/audit-log.gif) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.service-payload{
+    background:  url(../../public/images/menu-icons/service-payload.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.anonymous{
+    background:  url(../../public/images/menu-icons/anonymous.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.report-sb{
+    background:  url(../../public/images/menu-icons/ball.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.report-casino{
+    background:  url(../../public/images/menu-icons/casino.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.cash-log{
+    background:  url(../../public/images/menu-icons/cash-log.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.report-financial{
+  background:  url(../../public/images/menu-icons/finance.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.report-ipaddress{
+  background:  url(../../public/images/menu-icons/ipaddress.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.member-mapping{
+    background:  url(../../public/images/menu-icons/member-mapping.png) no-repeat 2px center transparent;
+}
+#menu-wrapper ul li.member-migrate{
+    background:  url(../../public/images/menu-icons/user-migrate.png) no-repeat 2px center transparent;
+}
+#menu-wrapper ul li.member-pass{
+    background:  url(../../public/images/menu-icons/mem-pass.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.session{
+    background:  url(../../public/images/menu-icons/session.png) no-repeat 2px center transparent;
+}
+#menu-wrapper ul li.login-log{
+    background:  url(../../public/images/menu-icons/login-log.png) no-repeat 2px center transparent;
+}
+#menu-wrapper ul li.last-login{
+    background:  url(../../public/images/menu-icons/last-login.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.casino-tasks{
+    background:  url(../../public/images/menu-icons/casino-tasks.png) no-repeat 2px center transparent;
+}
+#menu-wrapper ul li.affiliate{
+    background:  url(../../public/images/menu-icons/affiliate.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.affliate-members{
+    background:  url(../../public/images/menu-icons/affliate-members.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.cash-report{
+    background:  url(../../public/images/menu-icons/cash-report.png) no-repeat 2px center transparent;
+}
+#menu-wrapper ul li.cash-report2{
+    background:  url(../../public/images/menu-icons/cash-report2.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.percent{
+    background:  url(../../public/images/menu-icons/percent.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.agent{
+    background:  url(../../public/images/menu-icons/agent.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.portal{
+    background:  url(../../public/images/menu-icons/portal.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.profiles{
+    background:  url(../../public/images/menu-icons/profiles.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.role-permission{
+    background:  url(../../public/images/menu-icons/permission.png) no-repeat 2px center transparent;
+}
+
+#menu-wrapper ul li.admin{
+    background:  url(../../public/images/menu-icons/admin.png) no-repeat 2px center transparent;
+}
+
+
+#menu-wrapper .m-title a.icon {
+    background:  url(../../public/images/menu-icons/star.png) no-repeat left top transparent;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -10px;
+}
+#m-system .m-title a.icon {
+    background-image:  url(../../public/images/menu-icons/system_b.png);
+}
+#m-reports .m-title a.icon {
+    background-image:  url(../../public/images/menu-icons/report_b.png);
+}
+
+#m-admin .m-title a.icon{
+    background-image:  url(../../public/images/menu-icons/admin_b.png) ;
+}
+
+#m-agent .m-title a.icon{
+    background-image:  url(../../public/images/menu-icons/agent_b.png) ;
+}
+
+#m-affilate .m-title a.icon{
+    background-image:  url(../../public/images/menu-icons/affiliate_b.png) ;
+}
+
+#m-member .m-title a.icon{
+    background-image:  url(../../public/images/menu-icons/members_b.png) ;
+}
+
+#m-casino .m-title a.icon{
+    background-image:  url(../../public/images/menu-icons/casino_b.png) ;
+}
+
+#m-member ul li.delta-balance{
+    background-image:  url(../../public/images/menu-icons/delta-balance.png) ;
+}
+
+#m-reports ul li.fraud-member{
+    background-image:  url(../../public/images/menu-icons/fraud-member.png) ;
+}
+
+#m-member ul li.member-credit{
+    background-image:  url(../../public/images/clear.png) ;
+}

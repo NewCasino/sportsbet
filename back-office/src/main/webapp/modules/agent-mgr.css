@@ -1,0 +1,7 @@
+.field label {
+    display: inline;
+}
+
+#result table input[type='text'] {
+    width: 90px;
+}

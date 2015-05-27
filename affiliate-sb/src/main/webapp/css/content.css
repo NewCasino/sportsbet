@@ -1,0 +1,103 @@
+#body {
+    color: #333;
+    clear: both;
+}
+
+#wrapper {
+    background: url(../images/v5/bg_content.jpg);
+}
+
+#content-pg { 
+    height: 100%; 
+    padding: 20px 25px;
+    overflow: hidden
+}
+
+#content-left { 
+    float: left; 
+    width: 229px; 
+    font-weight: bold; 
+    overflow: hidden;
+}
+#content-left .banner-2 { background:url(../images/v5/en/poster.png) no-repeat 0 0; width: 229px; height: 400px; margin-top: 25px; }
+.zh_CN #content-left .banner-2 { background:url(../images/v5/zh/poster.png) no-repeat 0 0; }
+
+#content-left .menu-2 a {
+    background:url(../images/v5/en/bg_Menu1.jpg) no-repeat 0 0; 
+    height: 67px;
+    width: 229px;
+    display: block;
+}
+
+#content-left .menu-2 a:hover {
+    background-image:url(../images/v5/en/bg_Menu2.jpg); 
+}
+
+.zh_CN #content-left .menu-2 a {
+    background-image:url(../images/v5/zh/bg_Menu1.jpg); 
+}
+
+.zh_CN #content-left .menu-2 a:hover {
+    background-image:url(../images/v5/zh/bg_Menu2.jpg); 
+}
+
+#content-left .menu-2 a.item-1 {
+    background-position: 0 0;
+}
+
+#content-left .menu-2 a.item-2 {
+    background-position: 0 -67px;
+}
+
+#content-left .menu-2 a.item-3 {
+    background-position: 0 -134px;
+}
+
+
+
+.zh_CN .btn-sports {background: url(../images/v4/zh/link-sb.jpg) no-repeat 0 0;}
+.zh_CN .btn-games {background: url(../images/v4/zh/link-games.jpg) no-repeat 0 0;}
+.zh_CN .btn-casino {background: url(../images/v4/zh/link-casino.jpg) no-repeat 0 0;}
+.zh_CN .btn-keno {background: url(../images/v4/zh/link-keno.png) no-repeat 0 0;}
+.zh_CN .btn-livechat {background: url(../images/v4/zh/live-chat.png) no-repeat 0 0;}
+.zh_CN .btn-sports:hover {background: url(../images/v4/zh/link-sb-hover.jpg) no-repeat 0 0;}
+.zh_CN .btn-games:hover {background: url(../images/v4/zh/link-games-hover.jpg) no-repeat 0 0;}
+.zh_CN .btn-casino:hover {background: url(../images/v4/zh/link-casino-hover.jpg) no-repeat 0 0;}
+.zh_CN .btn-keno:hover { background: url(../images/v4/zh/link-keno-hover.png) no-repeat 0 0; }
+.zh_CN .btn-livechat:hover { background-image: url(../images/v4/zh/live-chat-hover.png); }
+
+
+.panel {
+    padding: 8px;
+    padding-top: 0;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.panel-title {
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    color: #AE8646;
+    font-size: 18px;
+    font-weight: bold;
+    background: url(../images/v5/title_Line2.jpg) no-repeat 0 bottom;
+}
+
+.panel-content {
+    padding: 8px;
+}
+
+#content-right {
+    margin-left: 229px;
+}
+
+.banner {
+    width: 710px;
+    height: 201px;
+    margin: 0 10px 10px 10px;
+}
+
+.content {
+    margin: 10px 0 10px 10px;
+}

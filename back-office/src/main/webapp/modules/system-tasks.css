@@ -1,0 +1,8 @@
+fieldset {padding:10px 20px;  border: #6D2E5D 2px ridge ; margin-top: 20px;}
+fieldset legend {font-size: 12pt; font-weight: bold;  padding: 5px;}
+input { margin: 10px 10px; padding: 3px;}
+select {font-weight: bold;}
+select.c0{color: green;}
+select.c1{color: red;}
+option.green {color: green; }
+option.red {color: red; }

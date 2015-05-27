@@ -1,0 +1,19 @@
+#result{
+    overflow: auto;
+    position: absolute;
+}
+
+#result table{ width: 100%; table-layout: fixed;}
+
+.wallet {width: 24px; height: 24px; display: inline-block;width: 24px;padding: 0px!important;float: right; background: url(../public/images/kwallet.png) no-repeat center center transparent;}
+.bl-loading {background: url(../public/images/loading-sm.gif) no-repeat center center white; display: inline-block; width: 20px; height:20px; float: left;}
+#walletInfo span {line-height: 24px; font-weight: bold;}
+#walletInfo tr {line-height: 24px;}
+
+#createDSPMember span.messages {color: red; margin-left: 10px;}
+#result .newDsp {padding-left: 16px; background: url(../public/images/add.png) no-repeat left center;}
+
+#result table .st-INACTIVE select {color: red;}
+#result table .st-ACTIVE select {color: green;}
+
+#result td {padding: 0px 4px!important;}

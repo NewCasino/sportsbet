@@ -1,0 +1,61 @@
+.messages .blocks {
+    border: #E6DCBF solid 1px;
+    margin: 0;
+}
+.messages .title {
+    background: #EEEEEE;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    font-weight: bold;
+    padding: 0 18px;
+}
+.messages .title addr {
+    color: #BFA273;
+    font-weight: lighter;
+}
+
+.messages .content {
+    margin: 10px 18px;
+}
+
+.messages .content div {
+    margin-top: 5px;
+}
+
+.messages .content .subtitle {
+    color: #BC0000;
+    padding: 2px 0;
+}
+.messages .content .subtitle addr {
+    color: #BFA273;
+    font-weight: lighter;
+}
+
+.messages .content .subcontent {
+    color: #888888;
+    padding: 2px 0;
+}
+
+.messages hr {
+    height: 0;
+    border: 0;
+    border-bottom: #878787 dotted 1px;
+}
+
+.messages .blocks ul {
+    margin: 0;
+}
+
+.messages .pagination {
+    text-align: right;
+    line-height: 3em;
+}
+
+.messages .pagination .current {
+    color: red;
+}
+
+.messages .pagination a {
+    padding: 0 5px;
+}

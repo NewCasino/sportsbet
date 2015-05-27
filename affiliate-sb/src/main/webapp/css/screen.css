@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    color: #fff;
+}
+html {
+    background: #fff;
+    min-height: 800px;
+}
+#header {
+    position:relative;
+    height: 79px;
+    background: url(../images/v5/bg_Top.jpg) no-repeat 0 0;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: left;    
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #999;
+}
+
+#topnav {
+    background: #000;
+    overflow: hidden;
+}
+
+#topnav a {
+    color: #E6DCBF;
+    line-height: 2.5em;
+    font-size: 12px;
+}

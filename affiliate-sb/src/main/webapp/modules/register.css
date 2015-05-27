@@ -1,0 +1,126 @@
+/* layout */
+#body {
+    overflow: hidden;
+    color: #000;
+}
+
+#content-left {
+    background: url(../images/v3/oddspage-head.png) repeat-x 0 0; padding: 0; 
+}
+
+#body h1 {
+    line-height: 32px;
+    background: url(../images/v3/ico1.png) no-repeat 15px center;
+    padding-left: 45px;
+    font-size: 100% !important;
+    font-weight: normal !important;
+}
+
+.banner {
+    display: none;
+}
+
+/* form */
+#register-form {
+    margin: 10px;
+}
+
+#register-form table {
+    width: 100%;
+}
+
+#register-form table td {
+    padding: 4px;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+#register-form table td > span {
+    line-height: 1.8em;
+}
+
+#register-form table td .error {
+    display: block;
+    padding-top: 4px;
+    background: url(../images/v3/warning.png) no-repeat 0 0;
+    padding-left: 26px;
+    color: #333;
+}
+
+#register-form table td:nth-child(1),
+#register-form table .col-1 {
+    text-align: right;
+}
+
+#register-form .s-title {
+    background: url(../images/v3/bar.jpg) no-repeat 0 0;
+    height: 23px;
+    color: #FFF;
+    line-height: 23px;
+    padding: 0 30px;
+    text-align: left;
+}
+
+#register-form input[type='text'],
+#register-form input[type='password'],
+#register-form select {
+    width: 150px;
+}
+
+#register-form img.captcha {
+    height: 20px;
+    background: #000;
+}
+
+#register-form input[disabled] {
+    color: #ccc !important;
+}
+
+#register-form a {
+    color: blue;
+}
+
+.loading {
+    width: 16px;
+    height: 16px;
+    background: url(../images/ajax-loader.gif) no-repeat center center;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.loading.hide {
+    display: none !important;
+}
+
+.urls {
+    position: relative;
+}
+
+.urls input {
+    margin-bottom: 5px;
+}
+
+.moz .urls {
+    display: block;
+}
+
+#add-url {
+    background: url(../images/plus.gif) no-repeat 0 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+}
+
+.bottom {
+    padding: 10px 0 80px 150px;
+}
+
+#loginbtn {
+    width: 116px;
+    height: 42px;
+    text-indent: -1000px;
+}

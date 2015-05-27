@@ -1,0 +1,172 @@
+.bo {color: black; }
+
+
+.bo h1 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    line-height: 2em;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 1)));
+    text-shadow: #CCC 0.1em 0.1em 0.2em;
+}
+
+.bo input[type='text'], 
+.bo input[type='password'], 
+.bo input[type='file'], 
+.bo select, 
+.bo textarea {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 2px 2px;
+}
+
+.bo input[type='submit'] {
+    vertical-align: inherit;
+}
+
+.bo table td {
+    padding: 3px 8px;
+}
+
+.bo .tips {
+    margin-bottom: 10px;
+}
+
+.bo .tips p {
+    padding: 10px;
+}
+
+.bo #message {
+    text-align: center;
+    margin: 10px 4px;
+}
+
+.bo #message span {
+    padding: 3px 5px;
+    background: #FFD734;
+    border-radius: 4px;
+    cursor: default;
+}
+
+.bo #result {
+    border: solid 1px #EEE;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.bo #result table {
+    width: 100%;
+}
+
+.bo #result table thead td {
+    color: #000;
+    background: #6D2E5D;
+    background: rgb(242,242,242); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(242,242,242,1) 0%, rgba(232,232,232,1) 47%, rgba(209,209,209,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(47%,rgba(232,232,232,1)), color-stop(100%,rgba(209,209,209,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(232,232,232,1) 47%,rgba(209,209,209,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(232,232,232,1) 47%,rgba(209,209,209,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(242,242,242,1) 0%,rgba(232,232,232,1) 47%,rgba(209,209,209,1) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(242,242,242,1) 0%,rgba(232,232,232,1) 47%,rgba(209,209,209,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#d1d1d1',GradientType=0 ); /* IE6-9 */
+}
+
+.en_US .bo #result table thead td {
+    font-size: .88em;
+}
+
+.bo #result table tbody .even td {
+    background: #F7F7F7;
+}
+
+.bo #result table td {
+    line-height: 2em;
+}
+
+.bo #result table tbody td {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+
+.bo #result table tbody tr.selected td {
+    border-top: 1px solid #eee !important;
+    border-bottom: 1px solid #eee !important;
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.bo #result a {
+    padding: 0 5px;
+}
+
+.bo .btn, .bo input[type='submit'] {
+    -moz-border-radius: 5px 5px;
+    -webkit-border-radius: 5px 5px;
+    -moz-text-shadow: rgba(0, 0, 0, 0.246094) 0px -1px 3px;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.246094) 0px -1px 3px;
+    text-shadow: rgba(0, 0, 0, 0.246094) 0px -1px 1px;
+    -moz-box-shadow: #AAA 0px 0px 8px;
+    -webkit-box-shadow: #AAA 0px 0px 8px;
+    box-shadow: 0 0px 8px #AAA;
+    background: darkGray url(../images/button-bg.png) repeat-x 0 0;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.246094);
+    border-radius: 5px 5px;
+    color: #ddd !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    line-height: 1;
+    overflow: visible;
+    position: relative;
+    text-decoration: none;
+    width: auto;
+    font-size: 14px !important;
+    padding: 0 16px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.bo .btn:hover, .bo input[type='submit']:hover {
+    color: #fff !important;
+}
+
+.bo .btn:active, .bo input[type='submit']:active {
+    margin-bottom: -1px;
+}
+
+.bo .field {
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 5px;
+}
+
+.bo .field label {
+    display: block;
+    line-height: 1.5em;
+    text-align: center;
+}
+.bo .field .txt {
+    width: 120px;
+}
+
+.datepicker {
+    width: 80px;
+}
+
+.ui-datepicker {
+    font-size: .8em !important;
+}
+
+.nofound {
+    text-align: center;
+    line-height: 2em;
+}

@@ -1,0 +1,48 @@
+a.btn-view {
+    padding-left: 22px !important;
+    background: url(../public/images/view_more_text.png) no-repeat left center;
+}
+
+table ul {
+    margin-top: 5px;
+    margin-left: -12px;
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-box-shadow: #ccc 0px 0px 18px;
+    box-shadow: 0 0px 18px #ccc;
+}
+
+table ul li label {
+    display: inline-block;
+    width: 100px;
+    color: #888;
+}
+
+table ul .shadow,
+table ul .arrow {
+    border: 8px solid transparent;
+    height: 0;
+    left: 20px;
+    margin-left: -8px;
+    position: absolute;
+    width: 0;
+}
+
+table ul .shadow {
+    border-bottom-color: #eee;
+    top: -18px;
+}
+
+table ul .arrow {
+    border-bottom-color: #fff;
+    top: -16px;
+}
+
+#aff-detail fieldset {padding: 10px; border:lightgray solid 1px ; margin: 5px; border-radius: 10px 10px;  }
+#aff-detail select, input[type="text"] {width: 100px;}
+#aff-detail  td.tt { text-align:  right; width: 130px;}
+#aff-detail legend { font-weight: bold; color: darkblue; margin-left: 10px;}
+#aff-carry-over th {font-weight: bold}
+#aff-carry-over .tt {font-weight: bold; text-align: center; width: 150px;}

@@ -1,0 +1,15 @@
+<html>
+<head>
+<style type="text/css">
+html, body { padding: 0; margin: 0; overflow: hidden; }
+</style>
+</head>
+<body>
+<script type="text/javascript">
+if (location.search && location.search.indexOf("url=") != -1) {
+	var url = new RegExp("url\=([^&]+)", "ig").exec(location.search)[1];
+	document.write("<img src='" + url + "' />");
+}
+</script>
+</body>
+</html>

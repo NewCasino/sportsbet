@@ -1,0 +1,17 @@
+#content .roles {float:left; margin: 20px 20px 10px 0}
+#content .permissions {float:left; margin:20px 0px 10px 0px;}
+#content .flexigrid td, #content .flexigrid th{font-size: 10pt;}
+.flexigrid .save {background: url("../public/images/save.png") no-repeat left center transparent;}
+.flexigrid .add {background: url("../public/images/addusr.png") no-repeat left center transparent;}
+.flexigrid .edit {background: url("../public/images/editusr.png") no-repeat left center transparent;}
+
+.flexigrid .del {background: url("../public/images/delusr.png") no-repeat left center transparent;}
+
+#adminUserDetail table {width: 350px;}
+#adminUserDetail table input,#adminUserDetail table  select {margin: 4px; }
+#validate {display: inline-block; width: 24px; height:24px;background: url("../public/images/findusr.png") no-repeat center center transparent;}
+#val-status  {display: inline-block; width: 24px; height:24px;background: url("../public/images/cross.png") no-repeat center center transparent;}
+.available {display: inline-block; width: 24px; height:24px;background: url("../public/images/ok.gif") no-repeat center center transparent!important;}
+
+#admins tr.inactive {color: darkgrey; font-style: italic;}
+

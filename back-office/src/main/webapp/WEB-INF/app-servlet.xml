@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+    
+    <aop:aspectj-autoproxy/>
+    <!--Server common base functions: session, authorization, cache method output, JNDI Manager, Performance logging...-->
+    <import resource="classpath:com.pr7.server-common.xml"/>
+    <import resource="classpath:com.pr7.sb.scraper.xml"/>
+
+    <!-- Register the Annotation post processor -->
+    <context:annotation-config/>
+
+    <context:property-placeholder ignore-unresolvable="true" properties-ref="propertySource" 
+        location='classpath:com.pr7.backoffice.properties,classpath:com.pr7.keno.properties,classpath:com.pr7.casino.entwineasia.properties,classpath:com.pr7.casino.mgs.properties,classpath:com.pr7.sb.properties,classpath:com.pr7.casino.eastern.properties,classpath:com.pr7.sbasc.properties,classpath:com.pr7.newkeno.properties,classpath:com.pr7.scraper-sb.properties,classpath:com.pr7.sb3.properties'
+        local-override="true" />
+    <jee:jndi-lookup id="propertySource" jndi-name="PR7_BO_SB" />
+
+    <!--Add custom addition configuration following here-->
+    <!--All APIs-->
+    <context:component-scan base-package="com.pr7.sb"/>
+    <context:component-scan base-package="com.pr7.common"/>
+    <context:component-scan base-package="com.pr7.backoffice"/>
+    <context:component-scan base-package="com.pr7.casino"/>
+    <context:component-scan base-package="com.pr7.keno"/>
+    <context:component-scan base-package="com.pr7.newkeno"/>
+    <context:component-scan base-package="com.pr7.casino.entwineasia"/>
+    <context:component-scan base-package="com.pr7.sbasc"/>
+    <context:component-scan base-package="com.pr7.server.utils"/>
+    <context:component-scan base-package="com.pr7.sb3"/>
+    <import resource="classpath:com.pr7.sb.xml"/>
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basename" value="classpath:text" />
+        <property name="defaultEncoding" value="UTF-8"/>
+    </bean>
+    <bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+        <property name="paramName" value="lang" />
+    </bean>
+    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+        <property name="defaultLocale" value="en"/>
+    </bean>
+    <bean name="userSession" class="com.pr7.backoffice.session.BOUserSession" scope="session">
+        <aop:scoped-proxy/>
+    </bean>
+
+    <bean id="log4jInitialization"
+          class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+        <property name="targetClass" value="org.springframework.util.Log4jConfigurer" />
+        <property name="targetMethod" value="initLogging" />
+        <property name="arguments">
+            <list>
+                <value>classpath:log4j.xml</value>
+            </list>
+        </property>
+    </bean>
+    
+    <!-- MVC -->
+    <bean class="com.pr7.backoffice.interceptors.BOExceptionResolver" />
+    <bean class="com.pr7.sb.security.CaptchaService" />
+    <mvc:annotation-driven />
+    <mvc:view-controller path="/" view-name="home"/>
+    <mvc:interceptors>
+        <bean id="authenticationInterceptor" class="com.pr7.backoffice.interceptors.AuthenticationCheckInterceptor" />
+    </mvc:interceptors>
+
+<!--     Maps request URIs to controllers -->
+    <bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="defaultHandler">
+            <bean class="org.springframework.web.servlet.mvc.UrlFilenameViewController" />
+        </property>
+    </bean>
+
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:prefix="/WEB-INF/pages/"
+          p:suffix=".jsp"
+          p:viewClass="org.springframework.web.servlet.view.JstlView">
+    </bean>
+</beans>

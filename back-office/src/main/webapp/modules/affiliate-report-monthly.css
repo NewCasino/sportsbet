@@ -1,0 +1,72 @@
+#result table thead td {
+    text-align: center;
+}
+
+#result table tbody td {
+    text-align: right;
+}
+
+
+a.btn-view {
+    padding-left: 22px !important;
+    background: url(../public/images/view_more_text.png) no-repeat left center;
+}
+
+table ul {
+    margin-top: 5px;
+    margin-left: 5px !important;
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-box-shadow: #ccc 0px 0px 18px;
+    box-shadow: 0 0px 18px #ccc;
+    width: 200px;
+    text-align: left;
+}
+
+table ul li.content {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+table ul li {
+    padding: 0 !important;
+    margin: 0;
+    list-style: none !important;
+}
+
+table ul li label {
+    display: inline-block;
+    width: 80px;
+    color: #888;
+}
+
+table ul .shadow,
+table ul .larrow {
+    border: 8px solid transparent;
+    height: 0;
+    left: 20px;
+    margin-left: -8px;
+    position: absolute;
+    width: 0;
+}
+
+table ul .shadow {
+    border-bottom-color: #eee;
+    top: -18px;
+}
+
+table ul .larrow {
+    border-bottom-color: #fff;
+    top: -16px;
+}
+
+ul a.close {
+    background: url(../public/images/close.png) no-repeat center center;
+    width: 14px;
+    height: 14px;
+    float: right;
+    padding: 5px 1px!important;
+}

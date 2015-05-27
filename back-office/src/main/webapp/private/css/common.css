@@ -1,0 +1,149 @@
+html, body {margin:  0px; padding:0px; width: 100%; height: 100%; font: 10pt tahoma; }
+
+.hide,
+.template {
+    display: none;
+}
+
+invisible {
+    visibility: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.scrollable {
+    overflow-y: auto;
+}
+
+.center{
+    text-align: center !important;
+}
+
+.t-left{
+    text-align: left;
+}
+
+.t-right{
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.red {color: red;}
+.green {color: green;}
+.gray {color: gray;}
+
+#message-container {
+    bottom:15px;
+    position:fixed;
+    right:15px;
+}
+
+#message-container .message-queue {
+    min-height:80px;
+    width:auto;
+    padding: 0 20px 0 20px;
+    margin-top: 10px;
+    background: #6D2E5D;
+    -moz-border-radius: 5px; /* FF1+ */
+    -webkit-border-radius: 5px; /* Saf3-4 */
+    border-radius: 5px; /* Opera 10.5, IE 9, Saf5, Chrome */
+    -webkit-box-shadow: #888 0px 4px 10px;
+    -moz-box-shadow: #888 0px 4px 10px;
+    box-shadow: #888 0px 4px 10px;
+    margin-bottom: -30px;
+    opacity: 0;
+    color: #fff;
+    font-size:0.8em;
+    position: relative;
+}
+
+#message-container .message-queue .close {
+    background: url(../../public/images/close.png) no-repeat 0 0;
+    width: 14px;
+    height: 14px;
+    float: right;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+#message-container .message-queue .title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 3px;
+    color: yellow;
+}
+
+#message-container .message-queue .content {
+    padding:8px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.hidden {display: none!important;}
+.loading {background: url(../../public/images/loading.gif) no-repeat center center transparent; width: 100px; height: 20px; display: block;}
+#result tbody tr:hover td {background:#eed4f2!important ;}
+
+
+/* Bootstrap Overrides
+------------------------------- */
+form .control-group .controls label {
+    padding-top: 5px;
+}
+
+.modal {
+    display: none;
+}
+
+.btn i {
+    vertical-align: top;
+}
+
+.red {
+    color: red;
+}
+
+.datepicker {
+    width: 80px;
+}
+
+.ui-datepicker {
+    font-size: .8em !important;
+}
+
+.field {
+    display: inline-block;
+    margin-right: 3px;
+    margin-left: 5px;
+}
+
+.field label {
+    display: block;
+    line-height: 1.5em;
+    text-align: center;
+}
+.field .txt {
+    width: 120px;
+}
+.field .btn {
+    margin-bottom: 10px;
+}
+
+.nofound {
+    text-align: center;
+    line-height: 2em;
+}

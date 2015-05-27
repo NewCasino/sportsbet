@@ -1,0 +1,74 @@
+#result table {width: auto;}
+#casino-txn {width: 100%;}
+#result table td {line-height: inherit!important;}
+#loading {position: absolute; top: 5px;}
+#result-panel .loading-pnl {height: 26px; position: relative;}
+#message {height: 26px; line-height: 26px; padding: 0; margin: 0;}
+a.mgs-playcheck {padding-right: 20px!important; background: url(../../public/images/popup.png) no-repeat right center!important;}
+#btn-excel object { position: absolute;left: 0;}
+a.btn-view {
+    padding-left: 22px !important;
+    background: url(../../public/images/view_more_text.png) no-repeat left center;
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+}
+
+table ul {
+    margin-top: 5px;
+    margin-left: -12px;
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    -webkit-box-shadow: #ccc 0px 0px 18px;
+    box-shadow: 0 0px 18px #ccc;
+    border: 1px solid #ccc;
+}
+
+table ul li{
+    /*    max-height: 300px;*/
+    /*    overflow-y: auto;*/
+    /*    overflow-x: hidden;*/
+    text-align: left;
+    line-height: 18px;
+}
+
+table ul li label {
+    display: inline-block;
+    width: 80px;
+    color: #888;
+
+}
+
+table ul .shadow,
+table ul .arrow {
+    border: 8px solid transparent;
+    height: 0;
+    left: 20px;
+    margin-left: -8px;
+    position: absolute;
+    width: 0;
+}
+
+table ul .shadow {
+    border-bottom-color: #eee;
+    top: -18px;
+}
+
+table ul .arrow {
+    border-bottom-color: #fff;
+    top: -16px;
+}
+
+ul a.close {
+    background: url(../../public/images/close.png) no-repeat center center;
+    width: 14px;
+    height: 14px;
+    float: right;
+    padding: 5px 1px!important;
+    position: relative;
+    top:-12px;    
+}
+
+.loading-dlg .ui-dialog-titlebar {display: none;}

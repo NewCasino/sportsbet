@@ -1,0 +1,23 @@
+
+form table {
+    width: 100%;
+}
+
+form table td {
+    padding: 4px;
+    font-size: 12px;
+}
+
+form table td:nth-child(1),
+form table .col-1 {
+    text-align: right;
+    color: #888;
+}
+
+form input[type='text'],
+form input[type='password'],
+form select {
+    width: 180px;
+    padding: 4px;
+    font-size: 13px;
+}

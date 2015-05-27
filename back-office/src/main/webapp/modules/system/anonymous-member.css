@@ -1,0 +1,13 @@
+#result table {width: auto;}
+#result table td {line-height: inherit!important;}
+#loading {position: absolute; top: 5px;}
+#result-panel .loading-pnl {height: 26px; position: relative;}
+#message {height: 26px; line-height: 26px; padding: 0; margin: 0;}
+
+#result table a.show-pw {background: url(../../public/images/show-pw2.png) no-repeat center center; padding-left: 20px; height: 16px; display: inline-block;}
+#result table a.reset-pw {background: url(../../public/images/reset-pw.png) no-repeat left center; padding-left: 20px; height: 16px; display: inline-block; }
+#result .add-new {background: url(../../public/images/addusr.png) no-repeat left center; }
+
+#edit form {line-height: 20px;}
+#edit form span {padding-right: 5px;}
+#edit form li {padding-top: 10px;}

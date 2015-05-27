@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups xmlns="http://www.isdc.ro/wro"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
+
+    <group name='framework'>
+        <js>/private/js/framework/jquery-1.6.4.js</js>
+        <js>/private/js/framework/jquery.livequery.js</js>
+        <js>/private/js/framework/jquery-ui-1.8.16.custom.min.js</js>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <js>/private/js/framework/i18n.js</js>
+        <js>/private/js/framework/utils.js</js>
+        <js>/private/js/framework/extensions.js</js>
+        <js>/private/js/framework/jquery.cookie.js</js>
+        <js>/private/js/framework/json2.js</js>
+        <js>/private/js/framework/trimpath-template-1.1.2.js</js>
+        <js>/private/js/external/date.js</js>        
+    </group>    
+    <group name="module.base">
+        <css>/private/css/reset.css</css>
+        <css>/private/css/common.css</css>
+        <css>/private/css/screen.css</css>
+        <js>/private/js/framework/behaviors.js</js>
+    </group>
+    <group name="content-main">
+        <group-ref>module.base</group-ref>
+        <css>/private/css/content-main.css</css>
+        <js>/private/js/content-main.js</js>
+    </group>
+
+    <group name="page.index">
+        <group-ref>module.base</group-ref>
+        <css>/private/css/main.css</css>
+        <js>/private/js/main.js</js>
+    </group>
+
+    <group name="page.login">
+        <group-ref>module.base</group-ref>
+        <css>/private/css/login.css</css>
+        <js>/private/js/login.js</js>
+    </group>
+    
+    <group name="page.cur-mgr">
+        <group-ref>content-main</group-ref>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/cur-mgr.css</css>
+        <js>/private/js/external/jquery.inputformatter.js</js>
+        <js>/modules/cur-mgr.js</js>
+    </group>
+    
+    <group name="page.member-mapping-report">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/jquery.actionpanel.js</js>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/member-mapping-report.css</css>
+        <js>/modules/member-mapping-report.js</js>
+    </group>
+    
+    <group name="page.member-dsp-trial">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/jquery.actionpanel.js</js>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/member-dsp-trial.css</css>
+        <js>/modules/member-dsp-trial.js</js>
+    </group>
+    
+    <group name="page.service-payload">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/jquery.actionpanel.js</js>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/service-payload.css</css>
+        <js>/modules/service-payload.js</js>
+    </group>
+    
+    <group name="page.member-migration-report">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/jquery.actionpanel.js</js>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/member-migration-report.css</css>
+        <js>/modules/member-migration-report.js</js>
+    </group>
+    
+    <group name="page.member-login-report">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/private/css/subpage.css</css>
+        <js>/modules/member-login-report.js</js>
+    </group>
+    
+    <group name="page.member-last-login-report">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/member-last-login-report.css</css>
+        <js>/modules/member-last-login-report.js</js>
+    </group>
+    
+    <group name="page.reset-member-pwd">
+        <group-ref>content-main</group-ref>        
+        <css>/private/css/subpage.css</css>
+        
+        <css>/modules/reset-member-pwd.css</css>
+        <js>/modules/reset-member-pwd.js</js>
+    </group>
+    
+    <group name="page.member-wager-report">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>
+        <css>/private/css/subpage.css</css>
+        
+        <js>/modules/member-wager-report.js</js>
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+        <js>/modules/reports/gridWagerSB.js</js>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+        <css>/modules/member-wager-report.css</css>
+        <js>/private/js/external/jquery.timepicker.js</js>
+    </group>
+    
+    <group name="page.member-wagerasc-report">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>
+        <css>/private/css/subpage.css</css>
+
+        <js>/modules/member-wagerasc-report.js</js>
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+        <js>/modules/reports/gridWager.js</js>
+        <css>/modules/member-wagerasc-report.css</css>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+    </group>
+    
+    <group name="page.member-wagersb3-report">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>
+        <css>/private/css/subpage.css</css>
+        <js>/modules/member-wagersb3-report.js</js>
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+        <css>/modules/member-wagersb3-report.css</css>
+        <js>/modules/reports/gridWagerSB3.js</js>
+    </group>
+    
+    <group name="page.asc-transfer-history">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>
+        <css>/private/css/subpage.css</css>
+
+        <js>/modules/asc-transfer.js</js>
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+        <js>/modules/reports/gridAscTransfer.js</js>
+        <css>/modules/member-wagerasc-report.css</css>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+    </group>
+      <group name="page.sb3-transfer-history">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>
+        <css>/private/css/subpage.css</css>
+
+        <js>/modules/sb3-transfer.js</js>
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+        <js>/modules/reports/gridSB3Transfer.js</js>
+        <css>/modules/member-wagerasc-report.css</css>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+    </group>
+    
+    <group name="page.keno-transactions">
+            <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>
+        <css>/private/css/subpage.css</css>
+
+        <js>/modules/keno-transactions.js</js>
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+        <js>/modules/reports/gridKeno.js</js>
+        <css>/modules/keno-transactions.css</css>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+    </group>
+    
+    <group name="page.newkeno-transactions">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>
+        <css>/private/css/subpage.css</css>
+        
+        <js>/modules/newkeno-transactions.js</js>
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+        <js>/modules/reports/gridNewKeno.js</js>
+        <css>/modules/newkeno-transactions.css</css>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+    </group>
+    
+    <group name="page.bet-inquiry-report">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>
+        <css>/private/css/subpage.css</css>
+
+        <js>/modules/bet-inquiry-report.js</js>
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+        <js>/modules/reports/gridWagerBet.js</js>
+        <js>/modules/reports/gridWagerSBBet.js</js>
+        <js>/modules/reports/gridKeno.js</js>
+        <js>/modules/reports/gridCasino.js</js>
+        <js>/modules/reports/gridNewKeno.js</js>
+        <js>/modules/reports/gridWagerSB3.js</js>
+        <css>/modules/casino/casino-transactions.css</css>
+        <js>/private/js/external/encoder.js</js>
+        <css>/modules/member-wagerasc-report.css</css>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+    </group>
+    
+    <group name="page.rebate-transactions">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>
+        <css>/private/css/subpage.css</css>
+
+        <js>/modules/rebate-transactions-report.js</js>
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+        <js>/private/js/external/encoder.js</js>
+        <js>/modules/reports/gridRebateTransactions.js</js>
+        <css>/modules/member-wagerasc-report.css</css>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+    </group>
+    
+    <group name="page.financial-report-daily">
+        <group-ref>content-main</group-ref>        
+        <css>/private/css/subpage.css</css>
+        <css>/private/js/external/datepicker/css/datepicker.css</css>
+        <js>/private/js/external/datepicker/datepicker.js</js>
+        <js>/private/js/external/xdate.js</js>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/modules/financial-report-daily.css</css>
+        <js>/modules/financial-report-daily.js</js>        
+    </group>
+    
+    <group name="page.ipaddress-report">
+        <group-ref>content-main</group-ref>        
+        <css>/private/css/subpage.css</css>
+        <css>/private/js/external/datepicker/css/datepicker.css</css>
+        <js>/private/js/external/datepicker/datepicker.js</js>
+        <js>/private/js/external/xdate.js</js>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+        
+        <css>/modules/ipaddress-report.css</css>
+        <js>/modules/ipaddress-report.js</js>        
+    </group>
+    
+    <group name="page.session-log">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/session-log.css</css>
+        <js>/modules/session-log.js</js>
+    </group>
+    
+    <group name="page.schedule-log">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/schedule-log.css</css>
+        <js>/modules/schedule-log.js</js>
+    </group>
+    
+    <group name="page.audit-log">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/encoder.js</js>
+        <css>/private/css/subpage.css</css>
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+        <css>/modules/system/audit-log.css</css>
+        <js>/modules/system/audit-log.js</js>
+    </group>
+    
+    <group name="page.affiliate-report-members">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>        
+        <css>/private/css/subpage.css</css>
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+
+        <css>/modules/affiliate-report-members.css</css>
+        <js>/modules/affiliate-report-members.js</js>
+    </group>
+
+    <group name="page.affiliate-report">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>        
+        <css>/private/css/subpage.css</css>
+        <css>/modules/affiliate-report.css</css>
+        <js>/modules/affiliate-report.js</js>
+    </group>
+    
+    <group name="page.rebate-setting">
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+        
+        <js>/private/js/external/jquery.timepicker.js</js>
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>        
+        <css>/private/css/subpage.css</css>
+        <css>/modules/rebate-setting.css</css>
+        <js>/modules/rebate-setting.js</js>
+        <js>/modules/reports/gridRebateSetting.js</js>
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+    </group>
+    
+    <group name="page.affiliate-report-monthly">
+        <group-ref>content-main</group-ref>        
+        <css>/private/css/subpage.css</css>
+        <css>/private/js/external/datepicker/css/datepicker.css</css>
+        <js>/private/js/external/datepicker/datepicker.js</js>
+        <js>/private/js/external/xdate.js</js>
+        <css>/modules/affiliate-report-monthly.css</css>
+        <js>/modules/affiliate-report-monthly.js</js>        
+    </group>
+    
+    <group name="page.affiliate-wl-percentage">
+        <group-ref>content-main</group-ref>        
+        <css>/private/css/subpage.css</css>
+        <css>/private/js/external/datepicker/css/datepicker.css</css>
+        <js>/private/js/external/datepicker/datepicker.js</js>
+        <js>/private/js/external/jquery.actionpanel.js</js>
+        <js>/private/js/external/xdate.js</js>
+        <css>/modules/affiliate-wl-percentage.css</css>
+        <js>/modules/affiliate-wl-percentage.js</js>
+    </group>
+
+    <group name="page.cash-log">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/cash-log.css</css>
+        <js>/modules/cash-log.js</js>
+    </group>
+
+    <group name="page.cash-log2">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/flexigrid.js</js>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/private/css/grid/flexigrid.css</css>        
+        <css>/private/css/subpage.css</css>
+        <css>/modules/reports/cash-log.css</css>
+        <js>/modules/reports/cash-log.js</js>
+
+    </group>
+    
+    <group name="page.affiliate-mgr">
+        <js>/modules/countries.js</js>
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/affiliate-mgr.css</css>
+        <js>/modules/affiliate-mgr.js</js>
+    </group>
+    <group name="page.affiliate-url">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/affiliate-mgr.css</css>
+        <js>/modules/affiliate-url.js</js>
+        <css>/private/js/external/datepicker/css/datepicker.css</css>
+        <js>/private/js/external/datepicker/datepicker.js</js>
+        <js>/private/js/external/xdate.js</js>
+    </group>
+    
+    <group name="page.comment-mgr">
+        <group-ref>content-main</group-ref>
+        <css>/private/js/external/bootstrap/css/bootstrap.css</css>
+        <js>/private/js/external/bootstrap/js/bootstrap.js</js>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <!--        <css>/private/css/subpage.css</css>-->
+        <css>/modules/affiliate/comment-mgr.css</css>
+        <js>/modules/affiliate/comment-mgr.js</js>
+    </group>
+    
+    <group name="page.agent-mgr">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/jquery.inputformatter.js</js>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/agent-mgr.css</css>
+        <js>/modules/agent-mgr.js</js>
+    </group>
+    
+    <group name="page.agent-admin-portal">
+        <group-ref>content-main</group-ref>
+        <!--<js>/private/js/external/jquery.cookie.js</js>-->
+        <css>/private/css/subpage.css</css>
+        <css>/modules/agent-mgr.css</css>
+        <js>/modules/agent-admin-portal.js</js>
+    </group>
+    
+    <group name="page.anns-mgr">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/jquery.inputformatter.js</js>
+        <js>/private/js/external/cleditor/*.js</js>
+        <css>/private/js/external/cleditor/*.css</css>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/anns-mgr.css</css>
+        <js>/modules/anns-mgr.js</js>
+    </group>
+    
+    <group name="page.private-msg">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/jquery.inputformatter.js</js>
+        <js>/private/js/external/cleditor/*.js</js>
+        <css>/private/js/external/cleditor/*.css</css>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/private-msg.css</css>
+        <js>/modules/private-msg.js</js>
+    </group>
+    
+    <group name="page.role-permission">
+        <group-ref>content-main</group-ref>
+        <css>/private/css/grid/flexigrid.css</css>         
+        <css>/modules/role-permission.css</css>        
+        <js>/modules/role-permission.js</js>
+        <js>/private/js/external/flexigrid.js</js>
+    </group>
+
+    <group name="page.admin-management">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+        <css>/modules/admin-management.css</css>
+        <js>/modules/admin-management.js</js>
+    </group>
+
+    <group name="page.profile">
+        <group-ref>content-main</group-ref>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/profile.css</css>
+        <js>/modules/profile.js</js>
+    </group>
+    
+    <group name="page.systemTasks">
+        <group-ref>content-main</group-ref>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/system-tasks.css</css>
+        <js>/modules/system-tasks.js</js>
+    </group>
+
+    <group name="page.ptech-csagent">
+        <group-ref>content-main</group-ref>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/ptech-csagent.css</css>
+        <js>/modules/ptech-csagent.js</js>
+    </group>
+
+    <group name="page.mgs-bo">
+        <group-ref>content-main</group-ref>
+        <css>/private/css/subpage.css</css>
+        <css>/modules/mgs-bo.css</css>
+        <js>/modules/mgs-bo.js</js>
+    </group>
+    
+    <group name="page.external-member-mapping">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/jquery.actionpanel.js</js>                
+        <css>/private/css/subpage.css</css>
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+        <css>/modules/external-member-mapping.css</css>
+        <js>/modules/external-member-mapping.js</js>
+    </group>
+
+    <group name="page.casino-transactions">
+        <group-ref>content-main</group-ref>
+        <css>/private/css/subpage.css</css>
+        <js>/private/js/external/encoder.js</js>
+        <js>/private/js/external/dateFormat-1.2.3.js</js>
+        <js>/private/js/external/swfobject.js</js>
+        <js>/private/js/external/downloadify.min.js</js>        
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+        <css>/modules/casino/casino-transactions.css</css>
+        <js>/modules/casino/casino-transactions.js</js>
+    </group>
+    <group name="page.mgs-casino-tasks">
+        <group-ref>content-main</group-ref>
+        <css>/private/css/subpage.css</css>        
+        <css>/modules/casino/mgs-casino-tasks.css</css>
+        <js>/modules/casino/mgs-casino-tasks.js</js>
+    </group>
+    
+    <group name="page.sb-delta-balance-mgr">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/jquery.actionpanel.js</js>                
+        <css>/private/css/subpage.css</css>
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+        <js>/private/js/external/jquery.formatCurrency-1.4.0.js</js>
+        <css>/modules/member/sb-delta-balance-mgr.css</css>
+        <js>/modules/member/sb-delta-balance-mgr.js</js>
+    </group>
+    
+    <group name="page.member-credit">
+        <group-ref>content-main</group-ref>
+        <js>/private/js/external/jquery.actionpanel.js</js>                
+        <css>/private/css/subpage.css</css>
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+        <js>/private/js/external/jquery.formatCurrency-1.4.0.js</js>
+        <css>/modules/member/member-credit.css</css>
+        <js>/modules/member/member-credit.js</js>
+    </group>
+    
+    <group name="page.anonymous-member">
+        <group-ref>content-main</group-ref>
+        <css>/private/css/subpage.css</css>
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+        <css>/modules/system/anonymous-member.css</css>
+        <js>/modules/system/anonymous-member.js</js>
+    </group>
+    
+    <group name="page.fraud-member-report">
+        <group-ref>content-main</group-ref>
+        <css>/private/css/subpage.css</css>
+        <js>/private/js/external/flexigrid.js</js>
+        <css>/private/css/grid/flexigrid.css</css>
+        <css>/modules/reports/fraud-member-report.css</css>
+        <js>/modules/reports/fraud-member-report.js</js>
+    </group>
+    
+    <group name="page.pt-sportbook">
+        <group-ref>content-main</group-ref>
+        <css>/public/jquery/smoothness/jquery-ui-1.8.16.custom.css</css>
+        <css>/public/jquery/smoothness/ui.jqgrid.css</css>
+        <css>/private/css/subpage.css</css>
+        <js>/modules/pt-sportbook.js</js>
+        <css>/modules/pt-sportbook.css</css>
+        <js>/modules/reports/gridPtSportbook.js</js>
+
+        <js>/private/js/locale/grid.locale-en.js</js>
+        <js>/private/js/external/jquery.jqGrid.min.js</js>
+    </group>
+</groups>

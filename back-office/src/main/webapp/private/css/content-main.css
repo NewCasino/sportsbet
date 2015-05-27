@@ -1,0 +1,7 @@
+htmlm, body {}
+#body-wrapper { position: relative; overflow: auto;}
+#header { height: 30px; color: #000; text-shadow: gray 0.1em 0.1em 0.1em; position: absolute; top: 8px; left: 0;
+         font-size: 14pt;
+}
+#header , #content , #footer {margin-left: 10px;}
+#content {padding-top: 35px; }

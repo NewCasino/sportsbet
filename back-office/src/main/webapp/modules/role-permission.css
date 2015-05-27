@@ -1,0 +1,9 @@
+#content {padding-top: 35px; }
+#content .roles {float:left; margin: 0 20px 10px 0}
+#content .permissions {float:left; margin-right: 10px;}
+#content .flexigrid td, #content .flexigrid th{font-size: 10pt;}
+.flexigrid .save {background: url("../public/images/save.png") no-repeat left center transparent;}
+.flexigrid .add {background: url("../public/images/newRole.png") no-repeat left center transparent;}
+.flexigrid .edit {background: url("../public/images/edit.png") no-repeat left center transparent;}
+
+#newRoleDialog table input {margin: 4px;}

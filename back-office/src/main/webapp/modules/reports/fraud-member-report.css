@@ -1,0 +1,8 @@
+#result {width: 800px; float: left; margin-right: 10px; margin-bottom: 10px;}
+#details { }
+#result table {width: auto;}
+#result table td {line-height: inherit!important;}
+#loading {position: absolute; top: 5px;}
+#result-panel .loading-pnl {height: 26px; position: relative;}
+#message {height: 26px; line-height: 26px; padding: 0; margin: 0;}
+#result table a {cursor: pointer; text-decoration: underline; color: blue;}

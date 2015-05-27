@@ -1,0 +1,81 @@
+.messages .blocks {
+    border: #E6DCBF solid 1px;
+}
+.messages .title {
+    background: #EEEEEE;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    font-weight: bold;
+    padding: 0 18px;
+}
+.messages .title addr {
+    color: #BFA273;
+    font-weight: lighter;
+}
+
+.messages .content {
+    margin: 10px 18px;
+}
+
+.messages .content .subtitle {
+    color: #BC0000;
+    padding: 2px 0;
+}
+.messages .content .subtitle addr {
+    color: #BFA273;
+    font-weight: lighter;
+}
+
+.messages .content .subcontent {
+    color: #888888;
+    padding: 2px 0;
+}
+
+.messages hr {
+    height: 0;
+    border: 0;
+    border-bottom: #878787 dotted 1px;
+}
+
+.messages .pagination {
+    text-align: right;
+    line-height: 3em;
+}
+
+.messages .pagination .current {
+    color: red;
+}
+
+.messages .pagination a {
+    padding: 0 5px;
+}
+
+#send-message .wrap {
+    overflow: hidden;
+}
+
+#send-message .icon {
+    background: url(../../images/v5/ico_1.jpg) no-repeat center center;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#send-message table {
+    float: left;
+}
+
+#send-message table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+#send-message table input, #send-message table textarea {
+    width: 300px;
+}
+
+#send-message .bottom {
+    padding-left: 328px;
+    padding-top: 20px;
+}
